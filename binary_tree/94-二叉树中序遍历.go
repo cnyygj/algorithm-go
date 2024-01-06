@@ -24,3 +24,22 @@ func midTravel(root *TreeNode) {
 	tree = append(tree, root.Val)
 	midTravel(root.Right)
 }
+
+/**
+可以不需要定义全局变量
+func preorderTraversal(root *TreeNode) []int {
+    var arr []int
+    var travel func(root *TreeNode)
+    travel = func(root *TreeNode) {
+        if root == nil {
+            return
+        }
+        travel(root.Left)
+        arr = append(arr, root.Val)
+        travel(root.Right)
+    }
+    travel(root)
+
+    return arr
+}
+ */
