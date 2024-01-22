@@ -8,8 +8,8 @@ package binary_tree
  *     Right *TreeNode
  * }
 
-如果当前遍历到的节点 root\textit{root}root 的左右两棵子树都已经翻转，
-那么我们只需要交换两棵子树的位置，即可完成以 root\textit{root}root 为根节点的整棵子树的翻转。
+如果当前遍历到的节点 root 的左右两棵子树都已经翻转，
+那么我们只需要交换两棵子树的位置，即可完成以 root 为根节点的整棵子树的翻转。
 
 因此可以递归从叶子节点先开始翻转
 
